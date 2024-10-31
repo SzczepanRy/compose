@@ -1,0 +1,24 @@
+services:
+  ui: #ReactUi
+    image: pr-ui
+    build:
+      context: ./ui # tu plik dockerfile
+      args:
+        NODE_ENV: prod
+        REACT_HOST: https://localhost:3000
+
+      ports:
+        - "3000:80"
+          #########KYSSSSSSSSSSSSSS#####
+  services: #be
+    image: proj-be
+    build:
+      context: ./ui # tu plik dockerfile
+      args:
+        NODE_ENV: prod
+        REACT_HOST: https://localhost:3000
+
+      ports:
+        - "3000:80"
+
+

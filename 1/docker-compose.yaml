@@ -1,0 +1,15 @@
+#version: '3.9'
+services:
+    serv_name1: #wymagane dowolna nazwa
+        image: #nazwa obrazu wraz z tagiem  - pomijalne
+        container_name: # opcjonalne = compose nadaje swoj nazwe
+        command: # opcjonalne - podmienia CMD z Dockerfile
+        ports: #mapowanie portow
+        environments: #opcjonalne env
+        volumes: #opcjonalne - woluminy do podmontowania
+
+    serv_name2:
+        image: #^
+        restart: #opcjonalne polityka restartow
+volumes: #opcjonalna - zostana ustawione wart domyslne 
+networks: #opcjonalne - zostana ustawione wart domyslne

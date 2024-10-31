@@ -1,0 +1,26 @@
+apt install docker-compose-plugin
+
+why :
+	we use docker-compose to build a multi-container docker network.
+	call it microservices.
+	docker-compose extends to us a bridged network card.
+	docker-compose is compatible with dokcer swarm
+
+	.yaml -extention
+	
+check comp
+	docker compose config	
+	docker compose -f nameoffile.yaml  config
+run comp
+	docker compose up
+	
+	in background : 
+
+	docker compose up -d
+
+stop comp
+	THE VOLUME REMAINS
+	docker compose down
+	
+	-v at the end deletes volumes	
+	
